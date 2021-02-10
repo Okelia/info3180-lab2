@@ -12,6 +12,7 @@ header{
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
 header img{
     border-radius: 50%;
@@ -21,6 +22,7 @@ header img{
 }
 h1{
     font-size: 50px;
+    font-style: bold;
 }
 h3{
     font-size: 25px;
@@ -46,5 +48,6 @@ button{
     background-color: #FF00FF;
     font-size: 18px;
     padding: 3px;
+    width: 150px;
     
 }
