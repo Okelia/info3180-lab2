@@ -13,12 +13,10 @@ import datetime
 @app.route('/profile')
 def profile():
     """Render the website's profile page"""
-    return render_template('profile.html')
+    return render_template('profile.html', d = "Joined " + format_date_joined(datetime.datetime.now()))
 
-def format_date_joined():
-    now = datetime.datetime.now()
-    date_joined = datetime.date(2019, 2, 7)
-    return  render_template('profile.html', d= date_joined.strftime("%B, %Y") )
+def format_date_joined(date):
+    return  date.strftime("%B, %Y") 
 
 ###
 # Routing for your application.
